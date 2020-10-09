@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import * as Yup from 'yup';
 import Form from '../components/Form.js';
-import { firebase } from '../Firebase.js';
+import { firebase } from '../FirebaseImport.js';
 
 const validationSchema = Yup.object().shape({
   id: Yup.string()

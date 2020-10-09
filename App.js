@@ -8,7 +8,7 @@ import CourseEditScreen from './screens/CourseEditScreen'
 import UserContext from './UserContext';
 import { Button } from 'react-native';
 import SignInScreen from './screens/SignInScreen';
-import { firebase } from './Firebase.js';
+import { firebase } from './FirebaseImport.js';
 
 const Stack = createStackNavigator();
 

@@ -1,0 +1,38 @@
+[debug] [2020-10-09T00:11:55.461Z] ----------------------------------------------------------------------
+[debug] [2020-10-09T00:11:55.463Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Atul Jalan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-10-09T00:11:55.464Z] CLI Version:   7.12.1
+[debug] [2020-10-09T00:11:55.464Z] Platform:      win32
+[debug] [2020-10-09T00:11:55.464Z] Node Version:  v12.16.1
+[debug] [2020-10-09T00:11:55.467Z] Time:          Thu Oct 08 2020 19:11:55 GMT-0500 (Central Daylight Time)
+[debug] [2020-10-09T00:11:55.467Z] ----------------------------------------------------------------------
+[debug] [2020-10-09T00:11:55.467Z] 
+[debug] [2020-10-09T00:11:55.480Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-09T00:11:55.481Z] > authorizing via signed-in user
+[debug] [2020-10-09T00:11:55.481Z] [iam] checking project react-native-scheduler-7cc08 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-10-09T00:11:55.482Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-09T00:11:55.483Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-09T00:11:55.613Z] <<< HTTP RESPONSE 200
+[debug] [2020-10-09T00:11:55.618Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-scheduler-7cc08:testIamPermissions  
+
+[debug] [2020-10-09T00:11:55.763Z] <<< HTTP RESPONSE 200
+[debug] [2020-10-09T00:11:55.771Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-native-scheduler-7cc08  
+ 
+[debug] [2020-10-09T00:11:55.951Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'react-native-scheduler-7cc08'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2020-10-09T00:11:55.974Z] >>> HTTP REQUEST PUT https://react-native-scheduler-7cc08.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-10-09T00:11:56.117Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database react-native-scheduler-7cc08 is valid
+[debug] [2020-10-09T00:11:56.121Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/react-native-scheduler-7cc08/versions  
+
